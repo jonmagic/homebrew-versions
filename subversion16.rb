@@ -27,7 +27,7 @@ class Subversion16 < Formula
   depends_on "pkg-config" => :build
 
   # Requires system OpenSSL headers to build. >El Capitan no longer ship them.
-  depends_on MaximumMacOSRequirement => :yosemite
+  # depends_on MaximumMacOSRequirement => :yosemite
 
   # On Snow Leopard, build a new neon. For Leopard, the deps below include this.
   # We don't use our OpenSSL because Neon refuses to support it due to wanting SSLv2
