@@ -25,6 +25,7 @@ class Subversion16 < Formula
   deprecated_option "unicode-path" => "with-unicode-path"
 
   depends_on "pkg-config" => :build
+  depends_on "openssl" if MacOS.version >= :el_capitan
 
   # Requires system OpenSSL headers to build. >El Capitan no longer ship them.
   # depends_on MaximumMacOSRequirement => :yosemite
